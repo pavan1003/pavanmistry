@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  background: #eef5ff;
+  color: #000;
+}
+
+a:link {
+  color: #176b87;
+  padding: 3px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #18181d;
+}
+
+a:hover {
+  text-decoration: none;
+  border-radius: 12px;
+  background-color: #e0aed0;
+  padding: 3px 10px;
+  transition: all 0.5s ease;
+}
+
+.deadnav {
+  padding: 3px 10px;
+  position: relative;
+}
+
+.deadnav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background: linear-gradient(to left, #7d02fd, #f954cc) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  color: #fff;
+}
+
+a:active {
+  color: #f3f;
+}
+
+.portfolioImage {
+  height: 150px;
+  width: 150px;
+  border-radius: 300px;
+}
+
+.logo {
+  font-size: 36px;
+  color: #fff;
+}
+
+.navlist li {
+  display: inline;
+  list-style-type: circle;
+  padding-right: 20px;
+  border-left: 1px solid #000;
+  line-height: 1.1em;
+  margin: 0 0.5em 0 -0.5em;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.navlist li:first-child {
+  border-left: none;
+}
+
+.box {
+  display: flex;
+  font-family: "Tektur", sans-serif;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: #176b87;
+  /* background-color: #b4d4ff; */
+  background-image: linear-gradient(45deg, #7d02fd, #f954cc);
+  border-radius: 15px;
+  border: 1px #86b6f6 solid;
+  clear: both;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav {
+  text-align: right;
+  margin: 10px;
+  padding: 10px;
+  background-color: #b4d4ff;
+  border-radius: 15px;
+  border: 1px #86b6f6 solid;
+}
+
+.container {
+  display: flex;
+}
+
+.centre {
+  text-align: justify;
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #b4d4ff;
+  border-radius: 15px;
+  border: 1px #86b6f6 solid;
+  float: left;
+}
+
+.centre {
+  width: 100%;
+  margin: 10px;
+}
+
+.right h3 {
+  text-align: right;
+}
+
+.lower_nav {
+  clear: both;
+}
+
+.legal {
+  margin: 10px;
+  padding: 10px;
+  background-color: #b4d4ff;
+  border-radius: 15px;
+  border: 1px #86b6f6 solid;
+  text-align: center;
+  float: none;
+  clear: both;
+}
